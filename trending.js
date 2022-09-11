@@ -103,19 +103,6 @@
             s0507_new_price_text.textContent = `${singleProduct.price}`;
             s0507_product_new_price_wrapper.appendChild(s0507_new_price_text);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
             document.querySelector(".s0507_trending_items_home_all_product_wrapper").appendChild(s0507_trending_items_single_product);
 
         }
