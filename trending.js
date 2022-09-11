@@ -89,7 +89,21 @@
             showReviewStar(ratingNumber, s0507_product_rating);
 
             // product bottom area
-            
+            const s0507_product_name_wrapper = elementMaker("div", ["s0507_product_name_wrapper"]);
+            s0507_product_bottom_area.appendChild(s0507_product_name_wrapper);
+            const s0507_product_name = elementMaker("div", ["s0507_product_name"]);
+            s0507_product_name.textContent = `${singleProduct?.name}`;
+            s0507_product_name_wrapper.appendChild(s0507_product_name);
+
+            const s0507_product_price_wrapper = elementMaker("div", ["s0507_product_price_wrapper"]);
+            s0507_product_bottom_area.appendChild(s0507_product_price_wrapper);
+            const s0507_product_new_price_wrapper = elementMaker("div", ["s0507_product_new_price_wrapper"]);
+            s0507_product_price_wrapper.appendChild(s0507_product_new_price_wrapper);
+            const s0507_new_price_text = elementMaker("div", ["s0507_new_price_text"]);
+            s0507_new_price_text.textContent = `${singleProduct.price}`;
+            s0507_product_new_price_wrapper.appendChild(s0507_new_price_text);
+
+
 
 
 
